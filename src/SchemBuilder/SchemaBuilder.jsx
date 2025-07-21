@@ -17,7 +17,6 @@ const SchemaBuilder = () => {
     setFields(fields.map((field, i) => (i === index ? updatedField : field)));
   };
 
-  // Exclude 'required' key from output
   const buildJsonSchema = (fieldsArray) => {
   const obj = {};
   fieldsArray.forEach((field) => {
